@@ -14,7 +14,8 @@ const AddPostForm = (props) => {
             date: date,
             message: message
         };
-        console.log(newPost)
+        //console.log(newPost);
+        props.addNewPostProperty(newPost)
     }
 
     return ( 
