@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import AddPostForm from './Components/AddPost/AddPostForm';
 
 function App() {
 //I want each post to have 2 rows: 
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div>
+      <AddPostForm />
       <DisplayPosts parentPosts={posts} />
     </div>
   );
