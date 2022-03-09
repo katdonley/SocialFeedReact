@@ -1,3 +1,6 @@
+import CustomButton from "../CustomButtons/CustomButtons";
+
+
 const DisplayPosts = (props) => {
     return ( 
         props.parentPosts.map((post,index) => {
@@ -12,6 +15,8 @@ const DisplayPosts = (props) => {
             <tbody>
                 <tr>
                     <td>{post.message}</td>
+                    <CustomButton message='LIKE' />
+                    <CustomButton message='DISLIKE' />
                 </tr>
             </tbody>
             </table>

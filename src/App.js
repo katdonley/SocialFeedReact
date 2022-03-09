@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import AddPostForm from './Components/AddPost/AddPostForm';
 
+
 function App() {
 //I want each post to have 2 rows: 
 //1st will be the person's name and 2nd will be the post content
