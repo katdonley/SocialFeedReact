@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import AddPostForm from './Components/AddPost/AddPostForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import CustomButton from './Components/CustomButtons/CustomButtons';
 
 
 function App() {
@@ -14,9 +16,21 @@ function App() {
   }
 
   return (
-    <div>
-      <AddPostForm addNewPostProperty={addNewPost} />
-      <DisplayPosts parentPosts={posts} />
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <div className="border-box">
+            <AddPostForm addNewPostProperty={addNewPost} />
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6">
+          <div className="border-box">
+            <DisplayPosts parentPosts={posts} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

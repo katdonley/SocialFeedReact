@@ -5,7 +5,7 @@ const DisplayPosts = (props) => {
     return ( 
         props.parentPosts.map((post,index) => {
             return(
-            <table>
+            <table key={index}>
             <thead>
                 <tr>
                 <td>{post.name}</td>
@@ -14,13 +14,18 @@ const DisplayPosts = (props) => {
             </thead>
             <tbody>
                 <tr>
+                    
                     <td>{post.message}</td>
+                    <div>
                     <CustomButton message='LIKE' />
                     <CustomButton message='DISLIKE' />
+                    </div>
                 </tr>
+                
             </tbody>
             </table>
                 )
+                
             }) 
      );
 }
